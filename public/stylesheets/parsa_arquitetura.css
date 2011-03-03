@@ -1,0 +1,30 @@
+/* 
+    Document   : parsa_arquitetura
+    Created on : 03/03/2011, 01:07:06
+    Author     : abelardopinto
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+th {
+    background-color: #ccc;
+}
+
+td, th {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+td.center {
+    text-align: center;
+}
+

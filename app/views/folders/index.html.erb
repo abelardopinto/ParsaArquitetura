@@ -1,0 +1,28 @@
+<h1>Listing folders</h1>
+
+<table>
+  <tr>
+    
+    <th>Name</th>
+    <th>Description</th>
+    <th>Qtd Arquivos</th>
+    <th colspan="3">Action</th>
+  </tr>
+
+<% @folders.each do |folder| %>
+  <tr>
+   
+    <td><%= folder.name %></td>
+    <td><%= folder.description %></td>
+    <td class="center"></td>
+    <td><%= link_to 'Show', folder %></td>
+    <td><%= link_to 'Edit', edit_folder_path(folder) %></td>
+    <td><%= link_to 'Destroy', folder, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Folder', new_folder_path(:client_id => params[:client_id]) %>
+<%= link_to 'Voltar', clients_path %>
